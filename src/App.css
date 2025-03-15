@@ -1,38 +1,117 @@
-.App {
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+
+.homepage {
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  background-color: #654321;
+  padding: 40px 20px;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.header p {
+  font-size: 1.5em;
+  margin: 15px 0 25px;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffcc99;
+}
+
+.menu-section {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.menu-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  background-color: #ffebcc;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 28%;
+  margin: 15px;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-item h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.menu-item p {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.about-section, .contact-section {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+.about-section h2, .contact-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.about-section p, .contact-section p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555;
+}
+
+.footer {
+  padding: 30px;
+  background-color: #333;
+  color: #fff;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer p {
+  margin: 0;
+  font-size: 1.1em;
 }
