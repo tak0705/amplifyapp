@@ -6,7 +6,7 @@
   background-position: center;
   background-attachment: fixed;
   color: white;
-  height: 100vh;
+  min-height: 100vh; /* コンテンツが少なくてもページ全体が表示されるように最小高さを指定 */
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -121,9 +121,9 @@
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
-  position: absolute;
-  bottom: 0;
+  /* positionを削除して、フレックスボックスで下に配置されるように */
   width: 100%;
+  margin-top: auto; /* フッターを常にページの下に表示 */
 }
 
 /* メディアクエリ (レスポンシブ対応) */
