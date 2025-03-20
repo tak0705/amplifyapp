@@ -51,6 +51,7 @@ export default function CafeHomepage() {
     <div className="homepage">
       <header className="header">
         <h1>Cozy Corner Café</h1>
+        <br></br>
         <p>Find comfort in every cup.</p>
         <nav>
           <ul className="nav-links">
@@ -86,6 +87,13 @@ export default function CafeHomepage() {
       </header>
 
       <main>
+        {/* メニューの上に商品の写真を追加 */}
+        <section className="menu-photo-section">
+          <img src="/cofee.png" alt="Menu Item 1" />
+          <img src="/esp.jpg" alt="Menu Item 2" />
+          <img src="/late.jpg" alt="Menu Item 3" />
+        </section>
+
         <section id="menu" className="menu-section">
           <h2>Our Menu</h2>
           <div className="menu-items">
@@ -109,7 +117,6 @@ export default function CafeHomepage() {
           <h2>Contact Us</h2>
           <p>Email: contact@cozycornercafe.com</p>
           <p>Phone: (123) 456-7890</p>
-          <p>Address: 123 Coffee St, Java City</p>
         </section>
       </main>
 

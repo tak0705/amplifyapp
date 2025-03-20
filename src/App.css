@@ -22,12 +22,12 @@
 }
 
 .header h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 0;
 }
 
 .header p {
-  font-size: 1.2rem;
+  font-size: 2rem;
   margin-top: 0.5rem;
 }
 
@@ -52,6 +52,22 @@
 
 .nav-links a:hover {
   color: #f5a623; /* ホバー時にオレンジ色 */
+}
+
+/* メニューセクションの上に写真を追加 */
+.menu-photo-section {
+  display: flex; /* Flexboxで横並びにする */
+  justify-content: space-around; /* 画像の間に均等なスペースを入れる */
+  align-items: center; /* 画像の縦位置を中央に揃える */
+  padding: 20px; /* 余白を追加 */
+}
+
+.menu-photo-section img {
+  width: 350px; /* 各画像の幅を30%に設定して、3つ並べる */
+  height: auto; /* 高さを自動で調整 */
+  object-fit: cover; /* 画像を切り取る形でサイズをフィット */
+  border-radius: 10px; /* 画像の角を丸くする */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* 影を追加 */
 }
 
 /* メニューセクション */
